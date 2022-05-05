@@ -1,4 +1,4 @@
-# ffmpeg-cmd
+# FFmpeg-CMD
 常用的FFmpeg命令
 
 ### 指定流并转码和添加字幕
