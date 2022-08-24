@@ -17,3 +17,9 @@ ffmpeg.exe -i .\毒液2.2021.BD1080P.x264.CHS-ENG.BTSJ5.mp4 -ac 2 -acodec aac -v
 ```
 ffprobe -v quiet -print_format json -show_format -show_streams H:\Demo\Demoh264.mp4
 ```
+
+### 使用ffmpeg截取指定时间的视频
+
+```
+ffmpeg.exe -i test.mp4 -codec copy -ss 00:00:00 -to 00:00:30 output.mp4
+```
