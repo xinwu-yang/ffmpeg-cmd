@@ -23,3 +23,9 @@ ffprobe -v quiet -print_format json -show_format -show_streams H:\Demo\Demoh264.
 ```
 ffmpeg.exe -i test.mp4 -codec copy -ss 00:00:00 -to 00:00:30 output.mp4
 ```
+
+### 提取视频中的音频
+
+```
+ffmpeg -i demo.mp4 -vn -codec copy out.m4a
+```
