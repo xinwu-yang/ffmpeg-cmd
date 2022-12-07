@@ -33,7 +33,7 @@ ffmpeg -i demo.mp4 -vn -codec copy out.m4a
 ### 合并视频
 
 ```shell
-ffmpeg.exe -f concat -i filelist.txt -c:v hevc_nvenc EKDV-273-HEVC.mp4
+ffmpeg.exe -f concat -i filelist.txt -c:v hevc_nvenc output.mp4
 ```
 
 filelist.txt
