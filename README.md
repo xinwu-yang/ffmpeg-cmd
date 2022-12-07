@@ -29,3 +29,16 @@ ffmpeg.exe -i test.mp4 -codec copy -ss 00:00:00 -to 00:00:30 output.mp4
 ```
 ffmpeg -i demo.mp4 -vn -codec copy out.m4a
 ```
+
+### 合并视频
+
+```shell
+ffmpeg.exe -f concat -i filelist.txt -c:v hevc_nvenc EKDV-273-HEVC.mp4
+```
+
+filelist.txt
+
+```
+file '1.mp4'
+file '2.mp4'
+```
