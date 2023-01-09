@@ -42,3 +42,11 @@ filelist.txt
 file '1.mp4'
 file '2.mp4'
 ```
+
+### 视频音频2倍速
+
+```
+ffmpeg -i demo.mp4 -filter_complex "[0:v]setpts=0.5*PTS[v];[0:a]atempo=2.0[a]" -map "[v]" -map "[a]" output.mp4
+```
+
+> 音频每次只能支持2倍，所以如果是4倍则[0:a]atempo=2.0,atempo=2.0[a]
